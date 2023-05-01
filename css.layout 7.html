@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title> layout 7</title>
+        <style>
+            div {
+                outline: 1px solid black;
+            }
+            #container {
+                display: grid;
+                margin: auto;
+                max-width: 800px;
+            }
+            #blue {
+            display:grid;
+            background-color: blue;
+            grid-template-columns: 1fr 1fr;
+            height: 50px;
+            padding: 15px;
+            }
+            .yellow {
+                background-color: yellow;
+                margin: 5px;
+            }
+            #green {
+                background-color: lime;
+                height: 400px; 
+            }
+            #red {
+                display: grid;
+                background-color: red;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 1fr 1fr 1fr 1fr;
+                height:  300px;
+                padding: 20px;
+            }
+            .yellow2 {
+                background-color: yellow;
+                margin: 10px;
+                grid-column: 1 / 5;
+            }
+            .squares {
+               grid-template-columns: 1fr 1fr 1fr;
+               grid-template-rows: 1fr 1fr 1fr;
+
+                
+            }
+            #blue2 {
+                display: grid;
+                background-color: blue;
+                grid-template-columns:1fr 1fr 1fr 1fr;
+                grid-template-rows: 1fr 1fr 1fr 1fr;
+                height: 700px;
+                padding:20px;
+            }
+            .long {
+                background-color: yellow;
+                margin: 40px; 
+                grid-column: 1/6;
+            }
+            #green2 {
+                display: grid;
+                background-color: lime;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 1fr 1fr 1fr 1fr;
+                height: 500px;
+                padding: 20px;
+            }
+            .yellowthree {
+                background-color: yellow;
+                margin: 20px;
+                grid-column: 1 / 5;
+            }
+            .threecols {
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+                grid-template-rows: 1fr 1fr 1fr;
+            }
+        </style>
+</head>
+
+        <body>
+            <div id="container">
+                <div id="blue">
+                    <div class="yellow"></div>
+                    <div class="yellow"></div>
+                </div>
+                <div id="green"></div>
+                <div id="red">
+                    <div class="yellow2"></div>
+                    <div class="yellow sqaures"></div>
+                    <div class="yellow sqaures"></div>
+                    <div class="yellow sqaures"></div>
+                </div>
+                <div id="blue2">
+                    <div class="yellow long"></div>
+                </div>
+                <div id="green2">
+                    <div class="yellowthree"></div>
+                    <div class="yellow threecols"></div>
+                </div>
+                    
+            </div>
+        </body>
